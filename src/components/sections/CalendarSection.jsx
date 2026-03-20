@@ -8,9 +8,9 @@ const CalendarSection = ({ events }) => {
         <SectionTitle>Academic Calendar</SectionTitle>
         <div className="mt-10 space-y-4">
           {events?.map((event, idx) => (
-            <div key={idx} className="flex items-center p-4 border-l-4 border-blue-600 bg-gray-50 rounded-r-lg">
+            <div key={idx} className="flex items-center p-4 border-l-4 border-university-red bg-gray-50 rounded-r-lg">
               <div className="text-center pr-6 border-r border-gray-200">
-                <span className="block text-xl font-bold text-blue-900">{event.day}</span>
+                <span className="block text-xl font-bold text-university-red">{event.day}</span>
                 <span className="text-xs uppercase font-semibold text-gray-500">{event.month}</span>
               </div>
               <div className="pl-6">

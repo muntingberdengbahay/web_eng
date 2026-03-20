@@ -3,7 +3,7 @@ import SectionTitle from '../shared/SectionTitle';
 
 const CampusesSection = ({ campuses }) => {
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section className="py-20 bg-university-dark text-white">
       <div className="container mx-auto px-4">
         <SectionTitle className="text-white">Our Campuses</SectionTitle>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12">

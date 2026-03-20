@@ -10,18 +10,16 @@ const MainHeader = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <nav className="bg-university-red shadow-lg sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center text-white">
         {/* Logo placeholder */}
-        <div className="font-black text-2xl tracking-tighter text-blue-900">
-          UNI<span className="text-blue-600">VERSE</span>
-        </div>
+        <div className="font-black text-xl tracking-tight">UNIVERSITY NAME</div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 font-semibold text-gray-700">
+        <ul className="hidden md:flex gap-8 font-medium italic">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.path} className="hover:text-blue-600 transition-colors">
+              <a href={link.path} className="hover:text-university-gold transition-colors cursor-pointer border-b-2 border-transparent hover:border-university-gold">
                 {link.name}
               </a>
             </li>
@@ -29,7 +27,7 @@ const MainHeader = () => {
         </ul>
 
         {/* Mobile Menu Toggle (Simplified) */}
-        <button className="md:hidden text-gray-700">
+        <button className="md:hidden text-white">
           <Menu size={24} />
         </button>
       </div>

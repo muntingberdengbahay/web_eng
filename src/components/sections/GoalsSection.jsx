@@ -4,22 +4,22 @@ import { Target, Award, Users, Globe } from 'lucide-react'; // Icons for visual 
 const GoalsSection = () => {
   const goals = [
     { 
-      icon: <Target className="w-8 h-8 text-blue-600" />, 
+      icon: <Target className="w-8 h-8 text-university-red" />, 
       title: "Academic Excellence", 
       desc: "Top 5% ranking in national licensure examinations across all departments." 
     },
     { 
-      icon: <Globe className="w-8 h-8 text-green-600" />, 
+      icon: <Globe className="w-8 h-8 text-university-gold" />, 
       title: "Global Reach", 
       desc: "Expanding partnerships with 50+ international universities by 2027." 
     },
     { 
-      icon: <Users className="w-8 h-8 text-purple-600" />, 
+      icon: <Users className="w-8 h-8 text-university-red" />, 
       title: "Student Success", 
       desc: "Maintaining a 90% employment rate for our graduates within 6 months." 
     },
     { 
-      icon: <Award className="w-8 h-8 text-orange-600" />, 
+      icon: <Award className="w-8 h-8 text-university-gold" />, 
       title: "Research Innovation", 
       desc: "Increasing funding for student-led sustainable technology projects." 
     }
@@ -31,7 +31,7 @@ const GoalsSection = () => {
         <div className="bg-white rounded-3xl p-10 md:p-16 shadow-xl border border-gray-100">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Our 2026 Strategic Goals</h2>
-            <div className="w-20 h-1.5 bg-blue-600 mt-4 rounded-full"></div>
+            <div className="w-20 h-1.5 bg-university-gold mt-4 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

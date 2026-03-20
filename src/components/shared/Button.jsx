@@ -2,10 +2,10 @@ import React from 'react';
 
 const Button = ({ children, variant = 'primary', className = '', ...props }) => {
   const styles = {
-    primary: "bg-blue-700 text-white hover:bg-blue-800 shadow-md",
-    outline: "border-2 border-blue-700 text-blue-700 hover:bg-blue-50",
-    ghost: "text-blue-700 hover:bg-blue-50",
-    dark: "bg-gray-900 text-white hover:bg-black"
+    primary: "bg-university-red text-white hover:bg-university-dark shadow-md",
+    outline: "border-2 border-university-red text-university-red hover:bg-red-50",
+    ghost: "text-university-red hover:bg-red-50",
+    secondary: "bg-university-gold text-white hover:opacity-90 font-bold"
   };
 
   return (
