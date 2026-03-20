@@ -132,18 +132,18 @@ const programData = {
 "Assure the quality of the work and check against with the sustainability, occupational safety and health standards, policies and laws nationally and globally",
 "Participate in activities that promote and support socio - economic development nationally and globally",
 "Practice the career in Mechanical Engineering including a leading role in Thermal systems such as Air conditioning and Refrigeration or Power generation, or in the Design of Machineries"],
-    outcomes: ["apply knowledge of mathematics and science to solve mechanical engineering problems;",
-"design and conduct experiments, as well as to analyze and interpret data;",
-"design a system, component, or process to meet desired needs within realistic constraints, in accordance with standards;",
-"function in multidisciplinary and multi-cultural teams;",
-"identify, formulate and solve mechanical engineering problems;",
-"understand professional and ethical responsibility;",
-"communicate effectively;",
-"understand the impact of mechanical engineering solutions in a global, economic, environmental, and societal context;",
-"recognize the need for, and engage in life-long learning;",
-"know contemporary issues;",
-"use techniques, skills and modern engineering tools necessary for mechanical engineering practice;",
-"know and understand engineering and management principles as a member and leader of a team, and to manage projects in a multidisciplinary environment."],
+    outcomes: ["Apply knowledge of mathematics and science to solve mechanical engineering problems;",
+"Design and conduct experiments, as well as to analyze and interpret data;",
+"Design a system, component, or process to meet desired needs within realistic constraints, in accordance with standards;",
+"Function in multidisciplinary and multi-cultural teams;",
+"Identify, formulate and solve mechanical engineering problems;",
+"Understand professional and ethical responsibility;",
+"Communicate effectively;",
+"Understand the impact of mechanical engineering solutions in a global, economic, environmental, and societal context;",
+"Recognize the need for, and engage in life-long learning;",
+"Know contemporary issues;",
+"Use techniques, skills and modern engineering tools necessary for mechanical engineering practice;",
+"Now and understand engineering and management principles as a member and leader of a team, and to manage projects in a multidisciplinary environment."],
     image: "/mech-eng.jpg"
   },
   "Mechatronics Engineering": {
@@ -169,7 +169,7 @@ const CollegePage = () => {
           College of Engineering
         </h1>
         <p className="text-sm mt-2 text-[#800000]/80 font-medium">
-          Home &gt; Programs &gt; <span className="font-bold">{activeProgram}</span>
+          Home &gt; BulSU COE &gt; <span className="font-bold">{activeProgram}</span>
         </p>
       </div>
 
@@ -202,14 +202,20 @@ const CollegePage = () => {
                  {programData[activeProgram].title}
                </h2>
             </div>
-            <div className="flex-1 bg-gray-200">
+            <div className="flex-1 bg-[#800000] flex items-center justify-center min-h-[300px]">
+     {/*</article><div className="flex-1 bg-gray-200">
                <img 
                  src={programData[activeProgram].image} 
                  alt={activeProgram} 
                  className="w-full h-full object-cover min-h-[300px]" 
                />
             </div>
-          </div>
+          </div> */}
+     <div className="opacity-20">
+        <img src="/logo.png" alt="" className="h-32 grayscale brightness-[100] invert" />
+     </div>
+  </div>
+</div>
 
           {/* Program Description */}
           {/*<section>
@@ -250,11 +256,11 @@ const CollegePage = () => {
           {/* Faculty Button */}
           <div className="pt-8 border-t border-gray-100">
             <Link 
-              to="/faculty-list" 
-              className="inline-block bg-[#800000] text-white px-8 py-4 rounded-sm font-bold uppercase tracking-wider hover:bg-[#FFB81C] hover:text-[#800000] transition-all shadow-md"
-            >
-              View {activeProgram} Faculty Members
-            </Link>
+  to={`/faculty-list?dept=${activeProgram}`} // This adds ?dept=Civil Engineering to the URL
+  className="inline-block bg-[#800000] text-white px-8 py-4 rounded-sm font-bold uppercase tracking-wider hover:bg-[#FFB81C] hover:text-[#800000] transition-all shadow-md"
+>
+  View {activeProgram} Faculty Members
+</Link>
           </div>
 
         </article>

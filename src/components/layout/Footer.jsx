@@ -39,7 +39,7 @@ const Footer = () => {
           <ul className="space-y-4 text-sm font-light">
             <li><a href="/about" className="hover:text-[#FFB81C]">About BulSU</a></li>
             <li><a href="/careers" className="hover:text-[#FFB81C]">Work at BulSU</a></li>
-            <li><a href="/services" className="hover:text-[#FFB81C]">BulSU Services</a></li>
+            <li><a href="/college-engineering" className="hover:text-[#FFB81C]">BulSU COE</a></li>
           </ul>
         </div>
 
@@ -52,8 +52,8 @@ const Footer = () => {
           
           <ul className="space-y-4 text-sm font-light">
             <li><a href="/admissions" className="hover:text-[#FFB81C]">Be a BulSUan</a></li>
-            <li><a href="#" className="hover:text-[#FFB81C]">E-Library</a></li>
-            <li><a href="#" className="hover:text-[#FFB81C]">HEIMS</a></li>
+            <li><a href="https://www.bulsu.edu.ph/library" className="hover:text-[#FFB81C]">E-Library</a></li>
+            <li><a href="https://bulsu.heims.ph/" className="hover:text-[#FFB81C]">HEIMS</a></li>
           </ul>
         </div>
 

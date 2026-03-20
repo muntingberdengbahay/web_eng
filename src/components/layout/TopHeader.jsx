@@ -7,14 +7,14 @@ const TopHeader = () => {
       <div className="container mx-auto px-4 flex justify-end items-center gap-10">
         
         {/* HEIMS Link */}
-        <a href="#" className="flex items-center gap-3 text-black hover:opacity-80 transition-opacity">
+        <a href="https://bulsu.heims.ph/" className="flex items-center gap-3 text-black hover:opacity-80 transition-opacity">
           {/* Increased icon size to 28 (approx 7 in tailwind) */}
           <User size={28} strokeWidth={2.5} fill="black" /> 
           <span className="font-sans text-lg tracking-tight">HEIMS</span>
         </a>
 
         {/* E-LIBRARY Link */}
-        <a href="#" className="flex items-center gap-3 text-black hover:opacity-80 transition-opacity">
+        <a href="https://www.bulsu.edu.ph/library" className="flex items-center gap-3 text-black hover:opacity-80 transition-opacity">
           {/* Increased icon size to 28 */}
           <BookOpen size={28} strokeWidth={2.5} /> 
           <span className="font-sans text-lg tracking-tight">E-LIBRARY</span>

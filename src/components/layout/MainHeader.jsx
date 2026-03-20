@@ -6,9 +6,9 @@ const MainHeader = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About BulSU', path: '/about' },
-    { name: 'BulSU Services', path: '/college-engineering' },
+    { name: 'BulSU COE', path: '/college-engineering' },
     { name: 'Be a BulSUan', path: '/admissions' },
-    { name: 'Work at BulSUan', path: '/careers' },
+    { name: 'Work at BulSU', path: '/careers' },
   ];
 
   return (

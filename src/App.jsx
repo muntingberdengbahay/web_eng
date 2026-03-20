@@ -17,6 +17,9 @@ import EnrollmentSection from './components/sections/EnrollmentSection';
 // 3. Pages
 import CollegePage from './pages/CollegePage';
 import FacultyPage from './pages/FacultyPage';
+import About from "./pages/About";
+import Careers from './pages/Careers';
+import Admissions from "./pages/Admissions";
 
 // --- MOCK DATA ---
 const mockNews = [
@@ -41,15 +44,18 @@ function App() {
             <>
               <HeroCarousel />
               <AdmissionSection />
-              <AboutSection />
+              {/*<AboutSection />*/}
               <NewsSection newsData={mockNews} />
-              <EnrollmentSection />
+              {/*<EnrollmentSection />*/}
             </>
           } />
 
           {/* COLLEGE PAGE ROUTE */}
           <Route path="/college-engineering" element={<CollegePage />} />
           <Route path="/faculty-list" element={<FacultyPage />} />
+          <Route path="/careers" element={<Careers />} />
+           <Route path="/admissions" element={<Admissions />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
 
