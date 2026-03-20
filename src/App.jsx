@@ -1,121 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react';
+
+// Layout Components
+import TopHeader from './components/layout/TopHeader';
+import MainHeader from './components/layout/MainHeader';
+import Footer from './components/layout/Footer';
+
+// Section Components
+import HeroCarousel from './components/sections/HeroCarousel';
+import AdmissionSection from './components/sections/AdmissionSection';
+import AboutSection from './components/sections/AboutSection';
+import NewsSection from './components/sections/NewsSection';
+import EnrollmentSection from './components/sections/EnrollmentSection';
+
+// Shared
+import Container from './components/shared/Container';
+
+// --- MOCK DATA (Temporary for testing) ---
+const mockNews = [
+  { id: 1, title: "Fall Enrollment 2026", excerpt: "Applications are now officially open for all undergraduate programs.", image: "https://images.unsplash.com/photo-1523050335397-584a7a72dd8b?w=400" },
+  { id: 2, title: "New Research Lab", excerpt: "Our state-of-the-art AI research facility is now operational.", image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400" },
+  { id: 3, title: "Campus Sports Fest", excerpt: "Join us this Friday for the annual inter-campus tournament.", image: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=400" }
+];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="min-h-screen flex flex-col bg-white">
+      {/* 1. Global Layout Shell */}
+      <TopHeader />
+      <MainHeader />
 
-      <div className="ticks"></div>
+      {/* 2. Main Content Area */}
+      <main className="flex-grow">
+        
+        {/* Full-width Hero */}
+        <HeroCarousel />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {/* Floating Cards Section (overlaps hero slightly) */}
+        <AdmissionSection />
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        {/* Standard Content Sections */}
+        <AboutSection />
+        
+        <NewsSection newsData={mockNews} />
+
+        <EnrollmentSection />
+
+      </main>
+
+      {/* 3. Global Footer */}
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
