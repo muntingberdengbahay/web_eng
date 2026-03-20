@@ -16,6 +16,7 @@ import EnrollmentSection from './components/sections/EnrollmentSection';
 
 // 3. Pages
 import CollegePage from './pages/CollegePage';
+import FacultyPage from './pages/FacultyPage';
 
 // --- MOCK DATA ---
 const mockNews = [
@@ -48,7 +49,7 @@ function App() {
 
           {/* COLLEGE PAGE ROUTE */}
           <Route path="/college-engineering" element={<CollegePage />} />
-          
+          <Route path="/faculty-list" element={<FacultyPage />} />
         </Routes>
       </main>
 
