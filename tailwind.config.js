@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // Enriqueta for headings/titles
+        serif: ['Enriqueta', 'serif'],
+        // Inter for everything else
+        sans: ['Inter', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-};
+}
