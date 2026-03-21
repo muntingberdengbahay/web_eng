@@ -62,6 +62,7 @@ const Footer = () => {
       {/* Optional: Bottom Copyright bar */}
       <div className="container mx-auto px-4 mt-16 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
         <p>&copy; {new Date().getFullYear()} Bulacan State University. All rights reserved.</p>
+        <p>Ipapo, Marc Danielle | Isidro, Philip Aaron | Maclang, Clark Danniel | Buñing, Christine Mae</p>
       </div>
     </footer>
   );
