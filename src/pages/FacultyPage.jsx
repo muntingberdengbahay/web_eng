@@ -888,7 +888,7 @@ const FacultyPage = () => {
     <div className="bg-gray-50 min-h-screen font-sans">
       {/* Header */}
       <div className="bg-[#800000] py-16 px-8 text-white">
-        <h1 className="text-4xl font-serif font-bold">Faculty & Staff</h1>
+        <h1 className="text-4xl font-serif font-bold">Faculty Members</h1>
         <p className="text-[#FFB81C] mt-2 uppercase text-sm tracking-widest">Directory</p>
       </div>
 
